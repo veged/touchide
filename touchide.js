@@ -5,8 +5,8 @@ $(document).ready(function(){
 
     input.contents().each(function(){
         html += $.htmlString('div', {'class': 'node'}, [
-            ['div', {'class': 'node-prefix'}, '&nbsp;' + (this.tagName || '#').toLowerCase() + '&thinsp;'],
-            ['div', {'class': 'node-postfix'}, '&thinsp;' + (this.tagName ? '&middot;&middot;&middot;' : this.nodeValue) + '&nbsp;']
+            ['div', {'class': 'node-prefix'}, (this.tagName || '#').toLowerCase()],
+            ['div', {'class': 'node-postfix'}, (this.tagName ? '&middot;&middot;&middot;' : this.nodeValue)]
         ]);
     });
 

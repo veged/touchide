@@ -1,5 +1,5 @@
 body {
-	font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+    font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
     font-size: 23px;
     padding: 0;
     margin: 0;
@@ -25,10 +25,23 @@ body.landscape #output {
     line-height: 1.4;
     height: 34px;
 
+    min-width: 24px;
+
+    text-align: center;
+
     float: left;
 }
 
+.node-prefix,
+.node-midfix,
+.node-postfix
+{
+    padding: 0 5px;
+}
+
 .node {
+    margin: 0 5px 5px 0;
+
     -moz-border-radius: 17px;
     -webkit-border-radius: 17px;
 
@@ -36,8 +49,6 @@ body.landscape #output {
     
     color: #255594;
     text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 0;
-    
-    margin: 0 5px 5px 0;
 }
 
 .node-prefix {
@@ -46,7 +57,10 @@ body.landscape #output {
     -webkit-border-top-left-radius: 17px;
     -webkit-border-bottom-left-radius: 17px;
 
-	background-color: #a3c2eb;
+    padding-left: 7px;
+
+	color: #cedff5;
+	background-color: #255594;
 }
 
 .node-postfix {
@@ -55,15 +69,21 @@ body.landscape #output {
     -webkit-border-top-right-radius: 17px;
     -webkit-border-bottom-right-radius: 17px;
 
-	background-color: #cedff5;
+    padding-right: 7px;
 
+    /*
+	background-color: #a3c2eb;
+    */
+
+    background-color: #cedff5;
+
+    min-width: 17px;
     max-width: 250px;
     overflow: hidden;
 }
 
 .node-midfix {
-	color: #cedff5;
-	background-color: #255594;
+	background-color: #a3c2eb;
     text-shadow: rgba(255, 255, 255, 0.6) 0px 1px 0;
 }
 
