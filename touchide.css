@@ -6,8 +6,15 @@ body {
 }
 
 #output {
-    width: 320px;
     margin: 5px 0 0 5px; 
+}
+
+body.portrait #output {
+    width: 315px;
+}
+
+body.landscape #output {
+    width: 475px;
 }
 
 .node,
@@ -62,7 +69,6 @@ body {
 
 .node-content {
     clear: both;
-    /*width: 300px;*/
     padding: 5px 0 0 5px;
     margin: 0 5px 5px 0;
     border: 1px solid #a3c2eb;
@@ -70,6 +76,14 @@ body {
     -webkit-border-bottom-left-radius: 17px;
     -moz-border-radius-bottomright: 17px;
     -webkit-border-bottom-right-radius: 17px;
+}
+
+body.portrait .node-content {
+    width: 305px;
+}
+
+body.landscape .node-content {
+    width: 465px;
 }
 
 .current-node {

@@ -4,7 +4,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Touch IDE</title>
-        <meta name="viewport" content="width=480; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
+        <meta content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport"/>
+        <script type="text/javascript">
+            window.onorientationchange = function() {
+                document.body.setAttribute('class', window.orientation ? 'landscape' : 'portrait')
+            };
+        </script>
         <script src="lib/jquery/jquery-1.3.1.js" type="application/javascript"></script>
         <script src="lib/jquery.htmlstring.js" type="application/javascript"></script>
         <script src="touchide.js" type="application/javascript"></script>
